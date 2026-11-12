@@ -1,4 +1,4 @@
-# IoT Health Dashboard
+# IoT Health Monitoring System
 
 A Java simulation of four wearable health devices communicating over CoAP, with a Swing dashboard for sensor readings, warnings, and smart-ring vibration feedback. All devices run locally; no physical hardware is required.
 
@@ -10,11 +10,11 @@ The project demonstrates CoAP Observe subscriptions, periodic GET requests, asyn
 
 ```mermaid
 flowchart LR
-    glucose["Glucose sensor · UDP 5683"] -->|Observe| app["MobileApp · CoAP clients and alert logic"]
-    chest["Chest band · UDP 5684"] -->|Observe| app
-    ring["Smart ring · UDP 5685"] -->|Observe temperature| app
-    app -->|GET stress, steps, sleep| watch["Smartwatch · UDP 5686"]
-    app -->|POST vibration power| ring
+    glucose["Glucose sensor"] -->|Observe| app["MobileApp · CoAP clients and alert logic"]
+    chest["Chest band"] -->|Observe| app
+    ring["Smart ring"] -->|Obs Temperature| app
+    app -->|GET stress, steps, sleep| watch["Smartwatch"]
+    app -->|Vibration power| ring
     app -->|Readings and warnings| dashboard["Swing dashboard"]
 ```
 
