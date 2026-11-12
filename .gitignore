@@ -1,0 +1,14 @@
+# Workspace Eclipse
+.metadata/
+bin/
+*.class
+
+/Iot/
+
+# Javadoc 
+/doc/
+
+# temp files
+*.log
+.DS_Store
+Thumbs.db

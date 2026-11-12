@@ -1,0 +1,52 @@
+{
+  "resources": {
+    "glucoseLevel": {
+      "port": "5683",
+      "uri": "coap://127.0.0.1:5683/glucose-level",
+      "observable": true,
+      "lowerThreshold": 40,
+      "upperThreshold": 200
+    },
+    "heartRate": {
+      "port": "5684",
+      "uri": "coap://127.0.0.1:5684/heart-rate",
+      "observable": true,
+      "lowerThreshold": 40,
+      "upperThreshold": 160
+    },
+    "skinTemperature": {
+      "port": "5685",
+      "uri": "coap://127.0.0.1:5685/skin-temperature",
+      "observable": true,
+      "lowerThreshold": 34.0,
+      "upperThreshold": 39.0
+    },
+    "stressLevel": {
+      "port": "5686",
+      "uri": "coap://127.0.0.1:5686/stress-level",
+      "observable": false,
+      "lowerThreshold": 0,
+      "upperThreshold": 3
+    },
+    "stepsCount": {
+      "port": "5686",
+      "uri": "coap://127.0.0.1:5686/steps-count",
+      "observable": false,
+      "lowerThreshold": 0,
+      "upperThreshold": 100
+    },
+    "sleepQuality": {
+      "port": "5686",
+      "uri": "coap://127.0.0.1:5686/sleep-quality",
+      "observable": false,
+      "lowerThreshold": 0,
+      "upperThreshold": 0
+    },
+    "ringVibration": {
+      "port": "5685",
+      "uri": "coap://127.0.0.1:5685/ring-vibration",
+      "maxPower": 3
+    }
+  },
+  "simulatedDayDuration" : 144000
+}
